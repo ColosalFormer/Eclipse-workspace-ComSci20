@@ -27,8 +27,11 @@ public class playTicTacToe {
 	                if (j == board[i].length - 1) System.out.print(board[i][j]);
 	                else System.out.print( board[i][j] + " | ");
 	            }
-	            System.out.println();
-                System.out.println("------------");
+
+		            System.out.println();
+               System.out.println("------------");
+
+		             
 
 	        }
 
