@@ -28,6 +28,10 @@ public class ArraylistsExamples {
 			System.out.println(listofInts.get(i));
 
 		}
+		System.out.println(listofInts.indexOf(98));
+		System.out.println(listofInts.indexOf(99));
+		
+
 	}
 
 }//end main

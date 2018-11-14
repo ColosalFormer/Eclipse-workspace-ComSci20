@@ -29,7 +29,7 @@ public class playTicTacToe {
 	            }
 
 		            System.out.println();
-               System.out.println("------------");
+               System.out.println("--------------");
 
 		             
 
