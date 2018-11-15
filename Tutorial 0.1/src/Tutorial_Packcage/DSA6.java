@@ -24,12 +24,12 @@ public class DSA6 {
 		allSongs.add("BAD");
 		artists.add("xxtentacion");
 		//print library of songs and artists 
-					
+		int choice1;
+		do {			
 		for(int i = 0; i < allSongs.size(); i++) {//print all songs in play list 
 			System.out.println(i + " " + allSongs.get(i) + " " + artists.get(i));
 		}
-		int choice;
-		do {
+
 		System.out.println("1. add to library \n" +
 							"2. delete from library \n" +
 							"3. add to party playlist \n" +
@@ -66,6 +66,7 @@ public class DSA6 {
 				break;
 			default: 
 				System.out.println("That aint it chief");
+				break;
 			}//end switch
 		}while(choice != 4);
 	
