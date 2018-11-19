@@ -24,7 +24,7 @@ public class DSA6 {
 		allSongs.add("BAD");
 		artists.add("xxtentacion");
 		//print library of songs and artists 
-		int choice1;
+		int choice = 0;
 		do {			
 		for(int i = 0; i < allSongs.size(); i++) {//print all songs in play list 
 			System.out.println(i + " " + allSongs.get(i) + " " + artists.get(i));
@@ -36,10 +36,10 @@ public class DSA6 {
 							"4. exit");
 		
 		Scanner input = new Scanner(System.in);
-		int choice = input.nextInt();
+		int choice1 = input.nextInt();
 		
 
-			switch(choice) {//what are we checking on 
+			switch(choice1) {//what are we checking on 
 			case 1:
 				input.nextLine(); //gets rid of extra enter character 
 				System.out.println("enter song title: ");
