@@ -29,7 +29,7 @@ public class DSA6 {
 		for(int i = 0; i < allSongs.size(); i++) {//print all songs in play list 
 			System.out.println(i + " " + allSongs.get(i) + " " + artists.get(i));
 		}
-
+		System.out.println("");
 		System.out.println("1. add to library \n" +
 							"2. delete from library \n" +
 							"3. add to party playlist \n" +
