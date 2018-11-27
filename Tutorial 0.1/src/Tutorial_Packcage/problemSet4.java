@@ -76,6 +76,10 @@ for (int i = 1; i <= rows; i++) {
 	System.out.println(thisRow);
 }//end for loop
 
+System.out.println("42 + 7");
+System.out.println(42 + 7);
+System.out.print("Hello");
+System.out.println("World");
 	}
 
 }
