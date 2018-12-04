@@ -202,6 +202,7 @@ public static void basement1() {
   }
   }    // calls the basement1() function to go there
 }    
+
 public static void kitchen1() {
 // public static voidines Kitchen1 with no arguments
   System.out.println ("You return to the kitchen.");
