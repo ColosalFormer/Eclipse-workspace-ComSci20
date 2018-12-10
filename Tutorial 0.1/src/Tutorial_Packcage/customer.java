@@ -17,6 +17,6 @@ private double evilFunds;
 	
 	public void addFunds(double addevilFunds) {
 		
-		evilFunds = addevilFunds + evilFunds;
+		evilFunds = addevilFunds + evilFunds; 
 	}
 }
