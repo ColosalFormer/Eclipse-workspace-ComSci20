@@ -18,25 +18,35 @@ public class invoice {
 	
 	public void printInvoice() {
 		for(int i = 0; i < items.size(); i++) {//for loop that prints out the arraylists that contain everything 
-			System.out.println(items.get(i));
+			System.out.println(items.get(i) + "Your total plus tax is: %.2f $\n" + getProduct);//prints out full price plus tax
+
 		}//end for 
 		
 		
 	}
-	public customer theCustomer() {
+	
+
+	public customer gettheCustomer() {
 		return theCustomer;
 	}
 	
-	public Product getPrice() {
-		return getPrice();
-	}
 	
-	public boolean canAfford(customer Customer) {
-		return true;
+	public boolean canAfford(customer customer) {
+		if (customer.getEvilFunds() >= amountDue()) { //if statement that gets the customers evil funds and compares with the amount due
+			return true;
+		}
+		else {//else if they cannot afford
+			return false;
+		}
 	}
 	
 	public double amountDue() {
-		return amountDue();
+		double amountDue = 0;
+		for(int i = 0; i < items.size(); i++) {
+			amountDue = amountDue + items.get(i).getProduct().getPrice() * items.get(i).getQty();		
+			} 
+		
+		return amountDue;
 				
 	}
 	

@@ -5,10 +5,34 @@ private String secretLairLocation;
 private String Name;
 private double evilFunds;
 
+
+	
 	public customer(String secretLairLocation, String Name, double evilFunds) {
 		this.secretLairLocation = secretLairLocation;
 		this.Name = Name;
 		this.evilFunds = evilFunds;
+	}
+	
+	//getters
+	public String getsecretLairLocation() {
+		return secretLairLocation;
+	}
+	
+	public String getName() {
+		return Name;
+	}
+	
+	public double getEvilFunds() {
+		return evilFunds;
+	}
+	
+	//setters
+	public void setEvilFunds() {
+		this.evilFunds = evilFunds;
+	}
+	
+	public void setName() {
+		this.Name = Name;
 	}
 	
 	public String toString() {
