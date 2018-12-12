@@ -18,8 +18,9 @@ public class invoice {
 	
 	public void printInvoice() {
 		for(int i = 0; i < items.size(); i++) {//for loop that prints out the arraylists that contain everything 
-			System.out.println(items.get(i) + "Your total plus tax is: %.2f $\n" + getProduct);//prints out full price plus tax
-
+			System.out.printf(items.get(i) + " total: $%.2f \n" , amountDue());//prints out full price plus tax
+			
+			if()
 		}//end for 
 		
 		
@@ -43,7 +44,7 @@ public class invoice {
 	public double amountDue() {
 		double amountDue = 0;
 		for(int i = 0; i < items.size(); i++) {
-			amountDue = amountDue + items.get(i).getProduct().getPrice() * items.get(i).getQty();		
+			amountDue = amountDue + items.get(i).getProduct().getPrice() * items.get(i).getQty(); //calculates total amount 	
 			} 
 		
 		return amountDue;
