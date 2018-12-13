@@ -18,11 +18,24 @@ public class invoice {
 	
 	public void printInvoice() {
 		for(int i = 0; i < items.size(); i++) {//for loop that prints out the arraylists that contain everything 
-			System.out.printf(items.get(i) + " total: $%.2f \n" , amountDue());//prints out full price plus tax
-			
-			if()
+			System.out.printf(items.get(i) + " total: $%.2f \n" , (items.get(i).getProduct().getPrice() * items.get(i).getQty()));//prints out full price plus tax
+			System.out.println("");		
 		}//end for 
 		
+		if(amountDue() <= theCustomer.getEvilFunds()) { //checks if the customer has greater than or equal to the total amount due
+			System.out.println("YOUR PURCHASE HAS BEEN APPROVED");
+			System.out.println("");
+			System.out.println("");
+		}
+		
+		else {
+			double deficit = theCustomer.getEvilFunds() - amountDue(); //function that calculates the difference of funds 
+			deficit = deficit* -1; //calculation for the amount of money they are short of 
+			System.out.println("Your purchase has been denied"); //prints out how much the customers money is short by
+			System.out.println("You can not make this purchase");
+			System.out.printf(gettheCustomer() + " is short by $%.2f \n" , deficit);
+			System.out.println("");
+		}
 		
 	}
 	

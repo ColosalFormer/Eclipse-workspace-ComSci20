@@ -8,15 +8,25 @@ private Product theProduct;
 	public int getQty() {
 		return qty;
 	}
+	/**
+	 * 
+	 * @return 
+	 */
 	
 	public Product getProduct() {
 		return theProduct;
 	}
+	/**
+	 * 
+	 */
 	
 	//setters
 	public void setProduct() {
 		this.theProduct = theProduct;
 	}
+	/**
+	 * 
+	 */
 	
 	public void setQty() {
 		this.qty = qty;

@@ -22,35 +22,35 @@ public class TestInvoice {
 		//invoice run 2
 		customer c2 = new customer("Headquarters", "Joker", 15000.0);
 		invoice in2 = new invoice(c2);
-		in.addToOrder(new Product("BANG gun",534.90), 2);
-		in.addToOrder(new Product("Razor sharp playing cards", 16.80), 50);
-		in.addToOrder(new Product("Harpoon gun",450.50),4);
-		in.addToOrder(new Product("Crowbar",48.5),20);
-		in.addToOrder(new Product("Acid Flower",78.5),30);
+		in2.addToOrder(new Product("BANG gun",534.90), 2);
+		in2.addToOrder(new Product("Razor sharp playing cards", 16.80), 50);
+		in2.addToOrder(new Product("Harpoon gun",450.50),4);
+		in2.addToOrder(new Product("Crowbar",48.5),20);
+		in2.addToOrder(new Product("Acid Flower",78.5),30);
 
 		runInvoice(c2,in2); //runs invoice
 
 		//invoice run 3
 		customer c3 = new customer("Space", "Thanos", 56000000000.0);
 		invoice in3 = new invoice(c3);
-		in.addToOrder(new Product("Infinity gauntlet", 340000.50),1);
-		in.addToOrder(new Product("Time Gem",565000.00),1);
-		in.addToOrder(new Product("Power Gem",455000.00),1);
-		in.addToOrder(new Product("Soul Gem",707000.00),1);
-		in.addToOrder(new Product("Space Gem",690000.00),1);
-		in.addToOrder(new Product("Reality Gem",890000.00),1);
-		in.addToOrder(new Product("Mind Gem",690000.00),1);
+		in3.addToOrder(new Product("Infinity gauntlet", 340000.50),1);
+		in3.addToOrder(new Product("Time Gem",565000.00),1);
+		in3.addToOrder(new Product("Power Gem",455000.00),1);
+		in3.addToOrder(new Product("Soul Gem",707000.00),1);
+		in3.addToOrder(new Product("Space Gem",690000.00),1);
+		in3.addToOrder(new Product("Reality Gem",890000.00),1);
+		in3.addToOrder(new Product("Mind Gem",690000.00),1);
 		
 		runInvoice(c3,in3); //runs invoice
 
 		//invoice run 4
 		customer c4 = new customer("Camp", "Deathstroke", 5700.0);
 		invoice in4 = new invoice(c4);
-		in.addToOrder(new Product("Sniper Rifle", 3400.50),1);
-		in.addToOrder(new Product("EMP Grenade",23.00),60);
-		in.addToOrder(new Product("Sword",4500.00),3);
-		in.addToOrder(new Product("Blue Laser",39.50),6);
-		in.addToOrder(new Product("Line Launcher",670.90),8);
+		in4.addToOrder(new Product("Sniper Rifle", 3400.50),1);
+		in4.addToOrder(new Product("EMP Grenade",23.00),60);
+		in4.addToOrder(new Product("Sword",4500.00),3);
+		in4.addToOrder(new Product("Blue Laser",39.50),6);
+		in4.addToOrder(new Product("Line Launcher",670.90),8);
 		
 		
 		runInvoice(c4,in4); //runs invoice
@@ -69,6 +69,7 @@ i.printInvoice();
 		}
 				
 	}//end runInvoice
+
 
 }//end TestInvoice
 

@@ -36,7 +36,7 @@ private double evilFunds;
 	}
 	
 	public String toString() {
-		return "Secret Lair Location: " + secretLairLocation + " Name: " + Name + " Evil Funds: " + evilFunds;
+		return "Secret Lair Location: " + secretLairLocation + " Evil Funds: " + evilFunds + " Name: " + Name;
 	}
 	
 	public void addFunds(double addevilFunds) {
