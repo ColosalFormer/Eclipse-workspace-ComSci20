@@ -3,11 +3,6 @@ package Tutorial_Packcage;
 public class TestInvoice {
 
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
-
-		// create 3 additional invoice runs
-		// add at least 5 items to invoice order for each invoice run
-// make sure in at least one of the runs the customer can not afford the purchase
 		
 		//invoice run 1
 		customer c = new customer("island", "Dr evil", 15200.0);
@@ -58,6 +53,11 @@ public class TestInvoice {
 	}//end main
 	
 	//do not modify code below
+	/**
+	 *  prints out the invoice of the customer
+	 * @param c
+	 * @param i
+	 */
 	public static void runInvoice(customer c, invoice i) {
 		i.printInvoice();
 
