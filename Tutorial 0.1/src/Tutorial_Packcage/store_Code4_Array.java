@@ -4,6 +4,10 @@ import java.util.Scanner;
 
 public class store_Code4_Array {
 	//global variables
+	static Scanner scanWords = new Scanner(System.in );//scanner to take words in
+	static Scanner scanNums = new Scanner(System.in);//scanner to take numbers in
+	static Scanner scanAnswer = new Scanner(System.in);
+	static int itemNum;//gobal variable for item number
 	static double price = 0; //total price of sale
 	static final double TAX = 0.05;//tax that needs to be paid
 	static int totalQty = 0;//counter - accumulator
@@ -13,14 +17,17 @@ public class store_Code4_Array {
 	static double[] priceArray = { 1000.0, 1500.50, 2500.0, 1250.50, 2550.50, 3500.0, 1200.0, 230.0, 250.50, 400.0 }; //array for the prices of the items 
 	static int[] quantity = new int [10];
 	
-	
+	public static void list() { //Function for the list
+		for (int i = 0; i <= productArray.length - 1;i++) { //For loop for listing out every arrayed variable
+	    
+			System.out.println(i+1 + "." + productArray[i] + " " + priceArray[i] + "$"); //Prints out product name	
+			}
+	}	
 	 
 	public static void menu() {
-		Scanner scanWords = new Scanner(System.in );//scanner to take words in
-		Scanner scanNums = new Scanner(System.in);//scanner to take numbers in
-		Scanner scanAnswer = new Scanner(System.in);
+
 		
-		int itemNum;//gobal variable for item number
+
 
 		
 		System.out.println("What is your name? ");//creating a prompt for the user to enter in name
@@ -30,15 +37,11 @@ public class store_Code4_Array {
 		System.out.println("\nWelcome " + name + " to Christian and Scotts Hypebeast Fits where you can get all your hypebeast needs");
 		//prints out welcome statement to console 
 		System.out.println("\nWhat would you like to buy today?\n");//prompts user what they want
-		public static void list() { //Function for the list
-			for (int i = 0; i <= productArray.length - 1;i++) { //For loop for listing out every arrayed variable
-		    
-				System.out.println(i+1 + "." + productArray[i] + " " + priceArray[i] + "$"); //Prints out product name	
-				}
-				
+		
+		do {//do while loop start
 			
-
-			
+		list();//calls list funciton 
+		
 				itemNum = scanNums.nextInt();//scans what item they want
 
 				
@@ -63,31 +66,31 @@ public class store_Code4_Array {
 				quantity[itemNum-1] += qty;
 				price += calcCost(priceArray[itemNum - 1], qty);//calculates the total cost
 
-				System.out.println("You chose to buy " + quantity[] + " Louis V x Supreme collab duffle bag");
+				System.out.println("You chose to buy " + quantity[0] + " Louis V x Supreme collab duffle bag");
 			}
 			else if(itemNum == 4) {//if user picks 4, they choose that item
 				quantity[itemNum-1] += qty;
 				price += calcCost(priceArray[itemNum - 1], qty);//calculates the total cost 
 
-				System.out.println("You chose to buy " + quantity[] + " Gucci flip flops");
+				System.out.println("You chose to buy " + quantity[0] + " Gucci flip flops");
 			}
 			else if(itemNum == 5) {//if user picks 5, they choose that item
 				quantity[itemNum-1] += qty;
 				price += calcCost(priceArray[itemNum - 1], qty);//calculates the total cost 
 
-				System.out.println("You chose to buy " + BalenciQty + " Balenciaga Triple S sneakers");
+				System.out.println("You chose to buy " + quantity[0] + " Balenciaga Triple S sneakers");
 			}
 			else if(itemNum == 6) {//if user picks 5, they choose that item
 				quantity[itemNum-1] += qty;
 				price += calcCost(priceArray[itemNum - 1], qty);//calculates the total cost 
 		
-				System.out.println("You chose to buy " + OffWhiteQty + " OffWhite x Nike Jordan 1's");
+				System.out.println("You chose to buy " + quantity[0] + " OffWhite x Nike Jordan 1's");
 			}
 			else if(itemNum == 7) {//if user picks 5, they choose that item
 				quantity[itemNum-1] += qty;
 				price += calcCost(priceArray[itemNum - 1], qty);//calculates the total cost 
 			
-				System.out.println("You chose to buy " + YeezyQty + " Yeezy 350 boosts");
+				System.out.println("You chose to buy " + quantity[0] + " Yeezy 350 boosts");
 			}
 			else {//this runs when the user picks something that is not in the shop
 				System.out.println("Sorry we don't got that, come again next time");//prints this to the console
