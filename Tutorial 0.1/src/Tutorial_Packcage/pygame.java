@@ -664,6 +664,7 @@ public static void secretpassage() {
     }
   
 }
+
 public static void knockknock() {
 // public static voidines the variable knockknock();  
   System.out.println ("You hear a knock coming from the door.");
@@ -781,6 +782,7 @@ public static void knockknock() {
       }
    
 }
+
 public static void Bustdoor() {
 // public static voidines the function Bustdoor();:
   System.out.println ("The door gets busted down.");
@@ -796,6 +798,7 @@ public static void Bustdoor() {
     
   
 }
+
 public static void gunroom() {
 // public static voidines the variable gunroom();  
   System.out.println ("Ok, you don't have to continue if you dont want to.");
@@ -861,33 +864,32 @@ public static void gunroominside() {
   // creates the variable choices and System.out.printlns "Enter 1 for Pistol, Enter 2 for Shotgun"
   if (choice == 1 && !BackPack.contains("Pistol")) {
   // if the user choice is equal to 1 and Pistol is not in BackPack continue
-    if (choice == 1 && BackPack.contains("Pistol")) {
-    // if "Pistol" is already in the variable Backpakc continue
-      System.out.println ("You already have a Pistol you goof!");
-      // System.out.printlns "You already have a Pistol you goof!"
-    }}
-    else if (BackPack.contains("Clothes")) {
-    // if "Pistol" is not in the variable BackPack continue
+    if (!BackPack.contains("Pistol")) {
+      // if "Pistol" is not in the variable BackPack continue
       System.out.println ("Good choice, flexible gun with lots of options!");
       //System.out.printlns "Good choice, flexible gun with lots of options!"
       BackPack.add("Pistol");
       System.out.println("Added pistol to your inventory");
       // Adds the String Pistol to The variable BackPack
+    }}
+    else if (choice == 1 && BackPack.contains("Pistol")) {
+    	 // if "Pistol" is already in the variable Backpakc continue
+        System.out.println ("You already have a Pistol you goof!");
+        // System.out.printlns "You already have a Pistol you goof!"
     }
-  else if (choice == 2 && BackPack.contains("Shotgun")) {
+  else if (choice == 2 && !BackPack.contains("Shotgun")) {
   // else if the user choice is equal to 2 and Shotgun is not in BackPack continue
-    if (choice == 2 && BackPack.contains("Shotgun")) {
-    // if the "Shotgun" string is in BackPack continue
-      System.out.println ("You already have a Pistol you goof!");
-      // System.out.printlns "You already have a Pistol you goof!"
-    }
-    else if (choice == 2 && !BackPack.contains("Shotgun")) {
-    // if "Shotgun" string is not in BackPack continue
+    if (!BackPack.contains("Shotgun")) {
       System.out.println ("Good choice, Easy kills with this bad boy!");
       // System.out.printlns "Good choice, Easy kills with this bad boy!"
       BackPack.add("Shotgun");
       System.out.println("Added shotgun to your inventory");
       // Adds the string "Shotgun" to the variable BackPack
+    }
+    else if (choice == 2 && BackPack.contains("Shotgun")) {
+        // if the "Shotgun" string is in BackPack continue
+        System.out.println ("You already have a shotgun you goof!");
+        // System.out.printlns "You already have a Pistol you goof!"
   }}
   else {
   // if something else other than 1 or 2 is chosen continue
